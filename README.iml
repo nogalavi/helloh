@@ -1,0 +1,17 @@
+CategoryFinder finds a category for a given testname, by taking the categoty that has maximum score.
+The score is calculated by looking at the pre-given testname-category table, and counting how many times
+a word from the input appears in any test related to the category.
+
+Please see usage example at "UsageExample" class.
+
+for example:
+testname = "HDL Hemoglobin"
+Table =
+["HDL Total Hemoglobin", "Hemoglobin"],
+["Hemoglobin", "Hemoglobin"],
+["Cholesterol total", "Cholesterol"]
+
+The cagtegory "Hemoglobin" will have the score of 3 (2 matches in the first entry, 1 in the second),
+while the category "Cholesterol" will have the score of 0 (no word of the testname appears in any of it's related tests.
+
+The Category "Hemoglobin" has the highst score, therefore, it will be chosen.
